@@ -14,9 +14,9 @@ export default async function CustomersTable({
   return (
     <div className="w-full">
       <h1 className={`${lusitana.className} mb-8 text-xl md:text-2xl`}>
-        Customers
+        客户管理
       </h1>
-      <Search placeholder="Search customers..." />
+      <Search placeholder="搜索客户..." />
       <div className="mt-6 flow-root">
         <div className="overflow-x-auto">
           <div className="inline-block min-w-full align-middle">
@@ -66,19 +66,19 @@ export default async function CustomersTable({
                 <thead className="rounded-md bg-gray-50 text-left text-sm font-normal">
                   <tr>
                     <th scope="col" className="px-4 py-5 font-medium sm:pl-6">
-                      Name
+                      名称
                     </th>
                     <th scope="col" className="px-3 py-5 font-medium">
-                      Email
+                      邮箱
                     </th>
                     <th scope="col" className="px-3 py-5 font-medium">
-                      Total Invoices
+                      发票总数
                     </th>
                     <th scope="col" className="px-3 py-5 font-medium">
-                      Total Pending
+                      待支付金额
                     </th>
                     <th scope="col" className="px-4 py-5 font-medium">
-                      Total Paid
+                      已支付金额
                     </th>
                   </tr>
                 </thead>

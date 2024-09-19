@@ -1,15 +1,15 @@
 import { Revenue } from './definitions';
 
 export const formatCurrency = (amount: number) => {
-  return (amount / 100).toLocaleString('en-US', {
+  return (amount / 100).toLocaleString('ja-JP', {
     style: 'currency',
-    currency: 'USD',
+    currency: 'JPY',
   });
 };
 
 export const formatDateToLocal = (
   dateStr: string,
-  locale: string = 'en-US',
+  locale: string = 'zh-Hans-CN',
 ) => {
   const date = new Date(dateStr);
   const options: Intl.DateTimeFormatOptions = {
@@ -29,7 +29,7 @@ export const generateYAxis = (revenue: Revenue[]) => {
   const topLabel = Math.ceil(highestRecord / 1000) * 1000;
 
   for (let i = topLabel; i >= 0; i -= 1000) {
-    yAxisLabels.push(`$${i / 1000}K`);
+    yAxisLabels.push(`¥${i / 1000}K`);
   }
 
   return { yAxisLabels, topLabel };
