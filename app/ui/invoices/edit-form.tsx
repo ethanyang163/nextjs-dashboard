@@ -92,7 +92,7 @@ export default function EditInvoiceForm({
                   htmlFor="pending"
                   className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600"
                 >
-                  Pending <ClockIcon className="h-4 w-4" />
+                  支付中 <ClockIcon className="h-4 w-4" />
                 </label>
               </div>
               <div className="flex items-center">
@@ -108,7 +108,7 @@ export default function EditInvoiceForm({
                   htmlFor="paid"
                   className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-green-500 px-3 py-1.5 text-xs font-medium text-white"
                 >
-                  Paid <CheckIcon className="h-4 w-4" />
+                  已支付 <CheckIcon className="h-4 w-4" />
                 </label>
               </div>
             </div>
@@ -120,9 +120,9 @@ export default function EditInvoiceForm({
           href="/dashboard/invoices"
           className="flex h-10 items-center rounded-lg bg-gray-100 px-4 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-200"
         >
-          Cancel
+          取消
         </Link>
-        <Button type="submit">Edit Invoice</Button>
+        <Button type="submit">保存</Button>
       </div>
     </form>
   );
