@@ -3,7 +3,7 @@ import { inter } from '@/app/ui/fonts'
 import { Metadata } from 'next';
  
 export const metadata: Metadata = {
-  title: 'Acme Dashboard',
+  title: '了赢医疗',
   description: 'The official Next.js Course Dashboard, built with App Router.',
   metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
 };
